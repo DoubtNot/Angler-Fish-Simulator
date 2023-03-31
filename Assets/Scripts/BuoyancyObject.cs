@@ -19,19 +19,19 @@ public class BuoyancyObject : MonoBehaviour
 
     public float floatingPower = 15f;
 
-    public float waterHeight = 0f;
-
+    OceanManager oceanManager;
 
     Rigidbody m_Rigidbody;
 
     int floatersUnderwater;
 
 
-    bool underwater;
+    public bool underwater;
 
     void Start()
     {
         m_Rigidbody = GetComponent<Rigidbody>();
+        oceanManager = FindObjectOfType<OceanManager>();
     }
 
     void FixedUpdate()
@@ -40,7 +40,7 @@ public class BuoyancyObject : MonoBehaviour
         for (int i = 0; i < floaters.Length; i++)
         {
 
-            float difference = floaters[i].position.y - waterHeight;
+            float difference = floaters[i].position.y - oceanManager.WaterHeightAtPosition(floaters[i].position);
 
 
             if (difference < 0)
