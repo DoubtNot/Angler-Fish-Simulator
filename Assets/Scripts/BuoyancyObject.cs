@@ -13,11 +13,11 @@ public class BuoyancyObject : MonoBehaviour
 
     public float underWaterAngularDrag = 1f;
 
-    public float airDrag = 1f;
+    public float airDrag = 0f;
 
-    public float airAngularDrag = 1f;
+    public float airAngularDrag = 0.05f;
 
-    public float floatingPower = .06f;
+    public float floatingPower = 15f;
 
     OceanManager oceanManager;
 
