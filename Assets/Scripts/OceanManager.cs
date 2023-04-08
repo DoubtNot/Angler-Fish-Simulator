@@ -5,11 +5,11 @@ using UnityEngine;
 public class OceanManager : MonoBehaviour
 {
 
-    public float wavesHeight = 2f;
+    public float wavesHeight = 5f;
 
-    public float wavesFrequency = 1f;
+    public float wavesFrequency = 4f;
 
-    public float wavesSpeed = 10f;
+    public float wavesSpeed = 7f;
 
     public Transform ocean;
 
@@ -30,7 +30,7 @@ public class OceanManager : MonoBehaviour
 
     public float WaterHeightAtPosition(Vector3 position) 
     {
-        return ocean.position.y +  wavesDisplacement.GetPixelBilinear(position.x * wavesFrequency / 100, position.z * wavesFrequency / 100 + Time.time * wavesSpeed / 100).g * wavesHeight / 100 *ocean.localScale.x;
+        return ocean.position.y +  wavesDisplacement.GetPixelBilinear(position.x * wavesFrequency / 100, position.z * wavesFrequency / 100 + Time.time * wavesSpeed / 100).g * wavesHeight / 100 * ocean.localScale.x;
     }
 
     void OnValidate()
@@ -45,6 +45,6 @@ public class OceanManager : MonoBehaviour
     {
         oceanMat.SetFloat("_WavesFrequency", wavesFrequency/100);
         oceanMat.SetFloat("_WavesSpeed", wavesSpeed/100);
-        oceanMat.SetFloat("_WavesHeight", wavesHeight/100);
+        oceanMat.SetFloat("_WavesHeight", wavesHeight*100);
     }
 }
