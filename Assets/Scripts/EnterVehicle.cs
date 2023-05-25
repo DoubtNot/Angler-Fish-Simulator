@@ -10,17 +10,33 @@ public class EnterVehicle : MonoBehaviour
     public GameObject vehicleCamera;
     public GameObject playerCamera;
     public GameObject player;
+    public GameObject boat;
 
-
-    public void TaskOnClick()
+    public void TaskEnterOnClick()
     {
        
-        player.transform.parent = dropOffPoint;
         player.SetActive(false);
-        player.transform.localPosition = Vector3.zero;
+        boat.SetActive(true);
+
 
         vehicleCamera.SetActive(true);
         playerCamera.SetActive(false);
      
+    }
+
+    public void TaskExitOnClick()
+    {
+
+        player.SetActive(true);
+        boat.SetActive(false);
+
+        player.transform.parent = dropOffPoint;
+        player.transform.localPosition = Vector3.zero;
+
+
+
+        vehicleCamera.SetActive(false);
+        playerCamera.SetActive(true);
+
     }
 }
