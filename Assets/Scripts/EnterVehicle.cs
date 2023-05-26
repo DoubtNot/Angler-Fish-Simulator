@@ -18,6 +18,8 @@ public class EnterVehicle : MonoBehaviour
         player.SetActive(false);
         boat.SetActive(true);
 
+        player.transform.rotation = Quaternion.Euler(0, 0, 0);
+
 
         vehicleCamera.SetActive(true);
         playerCamera.SetActive(false);
@@ -32,6 +34,7 @@ public class EnterVehicle : MonoBehaviour
 
         player.transform.parent = dropOffPoint;
         player.transform.localPosition = Vector3.zero;
+        boat.transform.rotation = Quaternion.Euler(0, 0, 0);
 
 
 
