@@ -12,11 +12,13 @@ public class EnterVehicle : MonoBehaviour
     public GameObject playerCamera;
     public GameObject player;
     public GameObject boat;
+    public GameObject dockedBoat;
 
     public void TaskEnterOnClick()
     {
        
         player.SetActive(false);
+        dockedBoat.SetActive(false);
         boat.SetActive(true);
 
         boat.transform.parent = boatDropOffPoint;
@@ -33,6 +35,7 @@ public class EnterVehicle : MonoBehaviour
     {
 
         player.SetActive(true);
+        dockedBoat.SetActive(true);
         boat.SetActive(false);
 
         player.transform.parent = playerDropOffPoint;
