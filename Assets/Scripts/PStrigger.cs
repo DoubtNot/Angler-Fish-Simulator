@@ -12,7 +12,7 @@ public class PStrigger : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             GameObject spill = Instantiate(smokeyBurst) as GameObject;
-            spill.transform.position = new Vector3(transform.position.x, transform.position.y + 3.0f, transform.position.z);
+            spill.transform.position = new Vector3(transform.position.x, transform.position.y + 1.0f, transform.position.z);
             Destroy(this.gameObject);
             Destroy(spill, 2.0f);
         }

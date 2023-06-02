@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.07052275, g: 0.35373604, b: 0.97078824, a: 1}
+  m_IndirectSpecularColor: {r: 0.07049091, g: 0.35360757, b: 0.97003746, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -149,7 +149,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871812}
-  m_LocalRotation: {x: 0.094026, y: -0.000000004289476, z: 4.037779e-10, w: 0.99556977}
+  m_LocalRotation: {x: 0.094026, y: -0.0000000042894808, z: 4.0382328e-10, w: 0.99556977}
   m_LocalPosition: {x: 98.2, y: 20.74, z: -40.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -447,7 +447,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.5638298, y: 1}
+    m_SensorSize: {x: 0.5653847, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -470,7 +470,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31631164}
-  m_LocalRotation: {x: 0.042893928, y: 0.0000000021488182, z: -9.2256175e-11, w: 0.99907964}
+  m_LocalRotation: {x: 0.042893928, y: -0.0000000021488182, z: 9.2256175e-11, w: 0.99907964}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -980,17 +980,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 0644bf93d0ba85c44b3f797e143259c0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -720.1
+      value: -711.6
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0644bf93d0ba85c44b3f797e143259c0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.4
+      value: -4.31
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0644bf93d0ba85c44b3f797e143259c0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 79.9
+      value: 62.2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0644bf93d0ba85c44b3f797e143259c0,
         type: 3}
@@ -1095,6 +1095,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smokeyBurst: {fileID: 950930809333698622, guid: 54cf83c7b04a6564a8334165b22d7c82,
     type: 3}
+--- !u!114 &166456264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 166456257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25f4443653b1a0d45ad4912c22040978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floaters:
+  - {fileID: 610634830}
+  underWaterDrag: 3
+  underWaterAngularDrag: 1
+  airDrag: 0
+  airAngularDrag: 0.05
+  floatingPower: 9
+  underwater: 0
 --- !u!1 &188554978
 GameObject:
   m_ObjectHideFlags: 0
@@ -1284,7 +1304,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9c1fc03a76e7a0e46a52209c61b7e33e,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 200
+      value: 3000
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c1fc03a76e7a0e46a52209c61b7e33e,
         type: 3}
@@ -1294,12 +1314,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9c1fc03a76e7a0e46a52209c61b7e33e,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 200
+      value: 3000
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c1fc03a76e7a0e46a52209c61b7e33e,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -38.9
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c1fc03a76e7a0e46a52209c61b7e33e,
         type: 3}
@@ -1309,7 +1329,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 9c1fc03a76e7a0e46a52209c61b7e33e,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 243.6
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 9c1fc03a76e7a0e46a52209c61b7e33e,
         type: 3}
@@ -1437,7 +1457,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.5638298, y: 1}
+    m_SensorSize: {x: 0.5653847, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -1460,7 +1480,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 231440708}
-  m_LocalRotation: {x: 0.024762109, y: -0.0000000021501385, z: 5.3258294e-11, w: 0.9996934}
+  m_LocalRotation: {x: 0.024762109, y: 0.000000002150138, z: -5.325828e-11, w: 0.9996934}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2213,10 +2233,10 @@ RectTransform:
   m_Father: {fileID: 1364279292}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000076293945, y: 0}
-  m_SizeDelta: {x: 383.285, y: 158.908}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 219, y: 452}
+  m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &584977020
 MonoBehaviour:
@@ -2330,6 +2350,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1170048184}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &610634829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 610634830}
+  m_Layer: 0
+  m_Name: Floater
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &610634830
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610634829}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 2.7, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 166456260}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &614176294 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 5baa94b0cf5a5b54d94c97bb00c27753,
@@ -2585,7 +2636,7 @@ GameObject:
   - component: {fileID: 652153085}
   - component: {fileID: 652153084}
   m_Layer: 5
-  m_Name: EnterBoatButton (2)
+  m_Name: EnterBoat SeaTurtle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2607,10 +2658,10 @@ RectTransform:
   m_Father: {fileID: 1364279292}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000076293945, y: 0}
-  m_SizeDelta: {x: 383.285, y: 158.908}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 219.00003, y: 452}
+  m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &652153084
 MonoBehaviour:
@@ -2973,7 +3024,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.5638298, y: 1}
+    m_SensorSize: {x: 0.5653847, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -3640,7 +3691,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.5638298, y: 1}
+    m_SensorSize: {x: 0.5653847, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -4782,7 +4833,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.5638298, y: 1}
+    m_SensorSize: {x: 0.5653847, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -5519,7 +5570,7 @@ GameObject:
   - component: {fileID: 1295286536}
   - component: {fileID: 1295286535}
   m_Layer: 5
-  m_Name: EnterBoatButton
+  m_Name: EnterBoat Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5541,10 +5592,10 @@ RectTransform:
   m_Father: {fileID: 1364279292}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000076293945, y: 0}
-  m_SizeDelta: {x: 383.285, y: 158.908}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 219.00003, y: 452}
+  m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1295286535
 MonoBehaviour:
@@ -6708,7 +6759,7 @@ MonoBehaviour:
   underWaterAngularDrag: 1
   airDrag: 0
   airAngularDrag: 0.05
-  floatingPower: 11
+  floatingPower: 13
   underwater: 0
 --- !u!136 &1600476055
 CapsuleCollider:
@@ -6753,7 +6804,7 @@ GameObject:
   - component: {fileID: 1627873698}
   - component: {fileID: 1627873697}
   m_Layer: 5
-  m_Name: ExitBoatButton (2)
+  m_Name: ExitBoat SeaTurtle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6775,10 +6826,10 @@ RectTransform:
   m_Father: {fileID: 1364279292}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000076293945, y: 0}
-  m_SizeDelta: {x: 383.285, y: 158.908}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 219.00003, y: 452}
+  m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1627873697
 MonoBehaviour:
@@ -7249,7 +7300,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1663613509}
-  m_LocalRotation: {x: 0.094026, y: 0.0000000042894808, z: -4.0382328e-10, w: 0.99556977}
+  m_LocalRotation: {x: 0.094026, y: 0.0000000042894763, z: -4.0377834e-10, w: 0.99556977}
   m_LocalPosition: {x: 98.2, y: 20.74, z: -40.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7344,7 +7395,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.5638298, y: 1}
+    m_SensorSize: {x: 0.5653847, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -7367,7 +7418,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673417704}
-  m_LocalRotation: {x: 0.061059583, y: 0.000000004293569, z: -2.6265357e-10, w: 0.99813414}
+  m_LocalRotation: {x: 0.061059583, y: -0.000000004293569, z: 2.6265357e-10, w: 0.99813414}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -7589,7 +7640,7 @@ MonoBehaviour:
   underWaterAngularDrag: 1
   airDrag: 0
   airAngularDrag: 0.05
-  floatingPower: 11
+  floatingPower: 13
   underwater: 0
 --- !u!136 &1772708740
 CapsuleCollider:
@@ -7650,7 +7701,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 684390fe7c6fe484ba4996e300939cb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  wavesHeight: 5
+  wavesHeight: 0.2
   wavesFrequency: 4
   wavesSpeed: 7
   ocean: {fileID: 227913114}
@@ -7716,7 +7767,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.5638298, y: 1}
+    m_SensorSize: {x: 0.5653847, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -8041,7 +8092,7 @@ GameObject:
   - component: {fileID: 1872277072}
   - component: {fileID: 1872277071}
   m_Layer: 5
-  m_Name: ExitBoatButton
+  m_Name: ExitBoat Center
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8063,10 +8114,10 @@ RectTransform:
   m_Father: {fileID: 1364279292}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.0000076293945, y: 0}
-  m_SizeDelta: {x: 383.285, y: 158.908}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 219.00003, y: 452}
+  m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1872277071
 MonoBehaviour:
@@ -8988,7 +9039,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.5638298, y: 1}
+    m_SensorSize: {x: 0.5653847, y: 1}
     Iso: 200
     ShutterSpeed: 0.005
     Aperture: 16
@@ -9011,7 +9062,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024219157}
-  m_LocalRotation: {x: 0.07594943, y: 0.000000017684705, z: -0.000000001347034, w: 0.9971117}
+  m_LocalRotation: {x: 0.07594943, y: -0.000000017684702, z: 0.0000000013470337, w: 0.9971117}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

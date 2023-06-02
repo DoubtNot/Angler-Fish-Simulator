@@ -329,7 +329,7 @@ Material:
     - _UseEmissiveIntensity: 0
     - _UseShadowThreshold: 0
     - _WavesFrequency: 0.04
-    - _WavesHeight: 500
+    - _WavesHeight: 20
     - _WavesSpeed: 0.07
     - _WorkflowMode: 1
     - _ZTestDepthEqualForOpaque: 4
