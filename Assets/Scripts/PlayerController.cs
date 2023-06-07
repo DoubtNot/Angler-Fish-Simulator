@@ -13,11 +13,15 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] Transform cam;
 
+    public GameObject digButton;
+    public GameObject treasureDigButton;
+
 
     private void Start()
     {
         _boostTimer = 0;
         boosting = false;
+
     }
     private void Update()
     {
@@ -56,6 +60,7 @@ public class PlayerController : MonoBehaviour
                 _moveSpeed = 30;
             }
         }
+              
     }
 
     private void OnTriggerEnter(Collider collision) 
@@ -63,6 +68,19 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "SpeedUpZone") 
         {
             boosting = true;
+        }
+        if (collision.gameObject.tag == "Treasure")
+        {
+            digButton.SetActive (false);
+            treasureDigButton.SetActive(true);
+        }
+    }
+    private void OnTriggerExit(Collider collision)
+    {
+        if (collision.gameObject.tag == "Treasure")
+        {
+            digButton.SetActive(true);
+            treasureDigButton.SetActive(false);
         }
     }
 
