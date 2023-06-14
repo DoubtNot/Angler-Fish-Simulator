@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.07052275, g: 0.35373604, b: 0.97078824, a: 1}
+  m_IndirectSpecularColor: {r: 0.07049091, g: 0.35360757, b: 0.97003746, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -282,7 +282,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 365578432}
   freeLookCamera: {fileID: 1147477999}
-  rotationSpeed: 0.5
+  rotationSpeed: 1
   verticalSpeedMultiplier: 0.02
 --- !u!4 &5571513 stripped
 Transform:
@@ -30417,7 +30417,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1673417704}
-  m_LocalRotation: {x: 0.061059583, y: 0.000000004293569, z: -2.6265357e-10, w: 0.99813414}
+  m_LocalRotation: {x: 0.061059583, y: -0.000000004293569, z: 2.6265357e-10, w: 0.99813414}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
