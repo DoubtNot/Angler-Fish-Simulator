@@ -8,6 +8,7 @@ TagManager:
   - SpeedUpZone
   - Water
   - Treasure
+  - Land
   layers:
   - Default
   - TransparentFX
