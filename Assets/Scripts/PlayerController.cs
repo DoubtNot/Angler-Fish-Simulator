@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
             {
                 _boostTimer = 0;
                 boosting = false;
-                _moveSpeed = 30;
+                _moveSpeed = 35;
             }
         }
               

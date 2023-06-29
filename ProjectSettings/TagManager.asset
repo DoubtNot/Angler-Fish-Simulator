@@ -9,6 +9,7 @@ TagManager:
   - Water
   - Treasure
   - Land
+  - SpawnedPrefab
   layers:
   - Default
   - TransparentFX
