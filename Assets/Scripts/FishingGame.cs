@@ -12,7 +12,6 @@ public class FishingGame : MonoBehaviour
     public GameObject fishingLine;
 
     public Transform spawnPoint; // Reference to the end of the fishing fish spawn
-    public Transform waterCollider; // Reference to the water collider
 
     public float minWaitTime = 5f; // Minimum waiting time before fish spawns
     public float maxWaitTime = 10f; // Maximum waiting time before fish spawns
@@ -52,7 +51,7 @@ public class FishingGame : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.transform == waterCollider)
+        if (other.gameObject.CompareTag("Water"))
         {
             isCounting = true;
             waitTime = Random.Range(minWaitTime, maxWaitTime);
