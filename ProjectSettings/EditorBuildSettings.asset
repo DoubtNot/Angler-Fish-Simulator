@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Map_Multiplayer.unity
     guid: ae83f4573f520344db8388614a2fc3c4
   - enabled: 0
-    path: Assets/Scenes/Lobby.unity
+    path: Assets/Scenes/Lobby Delete.unity
     guid: 3d0090760fbf3be4199b4013eabcd601
   - enabled: 0
     path: Assets/Scenes/MainMenu_Delete.unity

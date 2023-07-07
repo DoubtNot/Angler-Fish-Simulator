@@ -1,9 +1,26 @@
 using UnityEngine;
+using Photon.Pun;
 
 public class AttachPlayer : MonoBehaviour
 {
+
+    PhotonView view;
+
+
+    private void FixedUpdate()
+    {
+        if (!view.IsMine)
+        {
+            return;
+        }
+    }
+
     private void Start()
     {
+
+        view = GetComponent<PhotonView>();
+
+
         // Find the player object (assuming it has a "Player" tag)
         GameObject playerObject = GameObject.FindGameObjectWithTag("Player");
 

@@ -12,20 +12,27 @@ public class CameraController : MonoBehaviour
     public float rotationSpeed = 1.5f;
     public float verticalSpeedMultiplier = 0.5f;
 
+
     PhotonView view;
 
 
-    private void Start()
+    void Awake()
     {
         view = GetComponent<PhotonView>();
-
     }
 
-    void Update()
+    private void Start()
+    {
+        if (!view.IsMine)
+        {
+            Destroy(GetComponentInChildren<Camera>().gameObject);
+            Destroy(GetComponentInChildren<CinemachineFreeLook>().gameObject);
+        }
+    }
+
+    void FixedUpdate()
     {
 
-        if (view.IsMine)
-        {
             // Get joystick input values
             float horizontalInput = joystick.Horizontal;
             float verticalInput = joystick.Vertical;
@@ -37,7 +44,6 @@ public class CameraController : MonoBehaviour
             // Adjust the camera's rotation using Cinemachine
             freeLookCamera.m_XAxis.Value += rotationY;
             freeLookCamera.m_YAxis.Value += rotationX;
-        }
-           
+                   
     }
 }

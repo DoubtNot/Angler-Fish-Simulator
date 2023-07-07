@@ -2603,6 +2603,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainMenuRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 4998606924391821141, guid: 4bf4dcdbdbf63fd4996f379f1f08103a,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 32a4e3ef15ce83d47bd2ac1c31b92185, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4bf4dcdbdbf63fd4996f379f1f08103a, type: 3}
 --- !u!1 &1990486191

@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 871817}
   - component: {fileID: 871815}
   - component: {fileID: 871814}
-  - component: {fileID: 871818}
   m_Layer: 0
-  m_Name: PlayerCamera
+  m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -32,8 +31,8 @@ Transform:
   m_LocalScale: {x: 0.5011165, y: 0.5011165, z: 0.5011165}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 903591094538161116}
-  m_RootOrder: 7
+  m_Father: {fileID: 5866377874376819650}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 3.948, y: 153.918, z: 10.05}
 --- !u!20 &871817
 Camera:
@@ -145,22 +144,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &871818
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 871812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df9428261b55f124da1e8a1b63c1ac6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  joystick: {fileID: 7526317548386236410}
-  freeLookCamera: {fileID: 1147477999}
-  rotationSpeed: 1
-  verticalSpeedMultiplier: 0.02
 --- !u!1 &175365404
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,10 +678,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 558978502826149581}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 6850003457676111037}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: EnableChildCannonObjectRPC
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1047,7 +1030,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849098537}
-  m_LocalRotation: {x: -0.0009027524, y: 0.99366254, z: -0.11211602, w: -0.0080009205}
+  m_LocalRotation: {x: -0.00090275344, y: 0.99366254, z: -0.11211602, w: -0.008000929}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1794,8 +1777,8 @@ Transform:
   - {fileID: 849098539}
   - {fileID: 683234949}
   - {fileID: 2024219159}
-  m_Father: {fileID: 903591094538161116}
-  m_RootOrder: 6
+  m_Father: {fileID: 5866377874376819650}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1147477999
 MonoBehaviour:
@@ -2187,10 +2170,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 558978504240008342}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 6850003457676111037}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: DisableChildBoatObjectRPC
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2465,10 +2448,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 558978504240008342}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 6850003457676111037}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: EnableChildBoatObjectRPC
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2639,7 +2622,7 @@ RectTransform:
   - {fileID: 2003021718}
   - {fileID: 2013337617}
   m_Father: {fileID: 903591094538161116}
-  m_RootOrder: 8
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2963,10 +2946,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 558978504170948009}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 6850003457676111037}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: DisableChildFishingPoleObjectRPC
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3343,10 +3326,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 558978502826149581}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 6850003457676111037}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: DisableChildCannonObjectRPC
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3572,10 +3555,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 558978504170948009}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 6850003457676111037}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: EnableChildFishingPoleObjectRPC
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4755,6 +4738,79 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1 &348128104590875551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5866377874376819650}
+  - component: {fileID: 8129137557170463758}
+  - component: {fileID: 1355916342558382187}
+  m_Layer: 0
+  m_Name: CameraHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5866377874376819650
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348128104590875551}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1147478000}
+  - {fileID: 871813}
+  m_Father: {fileID: 903591094538161116}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8129137557170463758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348128104590875551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df9428261b55f124da1e8a1b63c1ac6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  joystick: {fileID: 7526317548386236410}
+  freeLookCamera: {fileID: 1147477999}
+  rotationSpeed: 1
+  verticalSpeedMultiplier: 0.02
+--- !u!114 &1355916342558382187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 348128104590875551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &558978503439487334
 GameObject:
   m_ObjectHideFlags: 0
@@ -4768,13 +4824,13 @@ GameObject:
   - component: {fileID: 2071971992008437939}
   - component: {fileID: 792785461369461891}
   - component: {fileID: 792785461369461897}
-  - component: {fileID: 792785461369461890}
+  - component: {fileID: 6850003457676111037}
   - component: {fileID: 792785461369461898}
   - component: {fileID: 792785461369461900}
   - component: {fileID: 792785461369461901}
   - component: {fileID: 2486660570440537725}
-  - component: {fileID: 6719786380694754431}
   - component: {fileID: 8705247791931622526}
+  - component: {fileID: 8423167872886519633}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4800,9 +4856,8 @@ Transform:
   - {fileID: 903591093943671927}
   - {fileID: 903591095819050771}
   - {fileID: 903591095894431276}
-  - {fileID: 1147478000}
-  - {fileID: 871813}
   - {fileID: 1364279292}
+  - {fileID: 5866377874376819650}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4886,7 +4941,7 @@ CapsuleCollider:
   m_Height: 1.19187
   m_Direction: 1
   m_Center: {x: 0, y: 0.91, z: -0.00048696995}
---- !u!114 &792785461369461890
+--- !u!114 &6850003457676111037
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4901,11 +4956,10 @@ MonoBehaviour:
   _rigidbody: {fileID: 792785461369461891}
   _joystick: {fileID: 7526317549915506027}
   _moveSpeed: 20
-  _boostTimer: 0
-  boosting: 0
   cam: {fileID: 871813}
-  digButton: {fileID: 0}
-  treasureDigButton: {fileID: 0}
+  childCannon: {fileID: 558978502826149581}
+  childFishingPole: {fileID: 558978504170948009}
+  childBoat: {fileID: 558978504240008342}
 --- !u!114 &792785461369461898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4953,7 +5007,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 558978503439487334}
   scriptsToDisable:
-  - {fileID: 792785461369461890}
+  - {fileID: 6850003457676111037}
   - {fileID: 792785461369461898}
   boatChild: {fileID: 558978504240008342}
   playerChild: {fileID: 558978503439487334}
@@ -4976,11 +5030,24 @@ MonoBehaviour:
   OwnershipTransfer: 0
   observableSearch: 2
   ObservedComponents:
-  - {fileID: 6719786380694754431}
+  - {fileID: 8423167872886519633}
   sceneViewId: 0
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &6719786380694754431
+--- !u!114 &8705247791931622526
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558978503439487334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d417046bc4f65044a0735ed63b915e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1364279288}
+--- !u!114 &8423167872886519633
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5013,19 +5080,6 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
---- !u!114 &8705247791931622526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558978503439487334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d417046bc4f65044a0735ed63b915e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 1364279288}
 --- !u!1 &792785460679456285
 GameObject:
   m_ObjectHideFlags: 0
@@ -10205,21 +10259,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 903591094538161116}
     m_Modifications:
-    - target: {fileID: 141981783448068117, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
-        type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 871813}
-    - target: {fileID: 141981783448068117, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
-        type: 3}
-      propertyPath: _joystick
-      value: 
-      objectReference: {fileID: 7526317549915506027}
-    - target: {fileID: 141981783448068117, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
-        type: 3}
-      propertyPath: _moveSpeed
-      value: 35
-      objectReference: {fileID: 0}
     - target: {fileID: 464665515850304985, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
         type: 3}
       propertyPath: m_RootOrder
@@ -10280,11 +10319,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boat
       objectReference: {fileID: 0}
-    - target: {fileID: 952795543754626915, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
+    - target: {fileID: 1249580334346238567, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
         type: 3}
-      propertyPath: m_IsActive
-      value: 0
+      propertyPath: ObservedComponents.Array.size
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1249580334346238567, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
+        type: 3}
+      propertyPath: ObservedComponents.Array.data[0]
+      value: 
+      objectReference: {fileID: 2591047701255323304}
+    - target: {fileID: 8979371700712998145, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
+        type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 871813}
+    - target: {fileID: 8979371700712998145, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
+        type: 3}
+      propertyPath: _joystick
+      value: 
+      objectReference: {fileID: 7526317549915506027}
+    - target: {fileID: 8979371700712998145, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
+        type: 3}
+      propertyPath: childCannon
+      value: 
+      objectReference: {fileID: 558978502826149581}
+    - target: {fileID: 8979371700712998145, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
+        type: 3}
+      propertyPath: childFishingPole
+      value: 
+      objectReference: {fileID: 558978504170948009}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb, type: 3}
 --- !u!1 &558978504240008342 stripped
@@ -10293,6 +10357,39 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 790629688826387445}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2591047701255323304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558978504240008342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8efc6b1d64977384eb3405357896c656, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_PositionModel:
+    SynchronizeEnabled: 1
+    TeleportEnabled: 1
+    TeleportIfDistanceGreaterThan: 3
+    InterpolateOption: 2
+    InterpolateMoveTowardsSpeed: 1
+    InterpolateLerpSpeed: 1
+    ExtrapolateOption: 0
+    ExtrapolateSpeed: 1
+    ExtrapolateIncludingRoundTripTime: 1
+    ExtrapolateNumberOfStoredPositions: 1
+  m_RotationModel:
+    SynchronizeEnabled: 1
+    InterpolateOption: 1
+    InterpolateRotateTowardsSpeed: 180
+    InterpolateLerpSpeed: 5
+  m_ScaleModel:
+    SynchronizeEnabled: 0
+    InterpolateOption: 0
+    InterpolateMoveTowardsSpeed: 1
+    InterpolateLerpSpeed: 0
 --- !u!4 &903591095894431276 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 464665515850304985, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
@@ -10850,62 +10947,6 @@ MonoBehaviour:
   launchButton: {fileID: 364215590}
   smokeyBurst: {fileID: 950930809333698622, guid: 54cf83c7b04a6564a8334165b22d7c82,
     type: 3}
---- !u!114 &813377370532876447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558978502826149581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObservedComponentsFoldoutOpen: 1
-  Group: 0
-  prefixField: -1
-  Synchronization: 3
-  OwnershipTransfer: 0
-  observableSearch: 2
-  ObservedComponents:
-  - {fileID: 1885589032822592832}
-  sceneViewId: 0
-  InstantiationId: 0
-  isRuntimeInstantiated: 0
---- !u!114 &1885589032822592832
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558978502826149581}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8efc6b1d64977384eb3405357896c656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PositionModel:
-    SynchronizeEnabled: 1
-    TeleportEnabled: 1
-    TeleportIfDistanceGreaterThan: 3
-    InterpolateOption: 2
-    InterpolateMoveTowardsSpeed: 1
-    InterpolateLerpSpeed: 1
-    ExtrapolateOption: 0
-    ExtrapolateSpeed: 1
-    ExtrapolateIncludingRoundTripTime: 1
-    ExtrapolateNumberOfStoredPositions: 1
-  m_RotationModel:
-    SynchronizeEnabled: 1
-    InterpolateOption: 1
-    InterpolateRotateTowardsSpeed: 180
-    InterpolateLerpSpeed: 5
-  m_ScaleModel:
-    SynchronizeEnabled: 0
-    InterpolateOption: 0
-    InterpolateMoveTowardsSpeed: 1
-    InterpolateLerpSpeed: 0
 --- !u!4 &903591093943671927 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ab71559b9db059f46a12d1a58b3c0617,
