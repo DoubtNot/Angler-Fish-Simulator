@@ -153,6 +153,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.DefaultCompany.BoredAnglerfish
     Standalone: com.DefaultCompany.Bored-Anglerfish
   buildNumber:
     Standalone: 0

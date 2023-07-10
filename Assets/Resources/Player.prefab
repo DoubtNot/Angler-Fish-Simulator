@@ -26,8 +26,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 871812}
-  m_LocalRotation: {x: -0.0007570676, y: 0.99553746, z: -0.09402325, w: -0.008015987}
-  m_LocalPosition: {x: 0.2824286, y: 5.188932, z: 17.536753}
+  m_LocalRotation: {x: -0.032304756, y: 0.9349656, z: -0.088302255, w: -0.34205043}
+  m_LocalPosition: {x: 11.29303, y: 5.27, z: 13.86853}
   m_LocalScale: {x: 0.5011165, y: 0.5011165, z: 0.5011165}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -678,8 +678,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6850003457676111037}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+      - m_Target: {fileID: 667768367795891354}
+        m_TargetAssemblyTypeName: SyncPlayerChildren, Assembly-CSharp
         m_MethodName: EnableChildCannonObjectRPC
         m_Mode: 1
         m_Arguments:
@@ -810,7 +810,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 683234947}
-  m_LocalRotation: {x: -0.0007570676, y: 0.99553746, z: -0.094023235, w: -0.008015987}
+  m_LocalRotation: {x: -0.03230475, y: 0.9349656, z: -0.08830225, w: -0.34205043}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1030,7 +1030,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849098537}
-  m_LocalRotation: {x: -0.00090275344, y: 0.99366254, z: -0.11211602, w: -0.008000929}
+  m_LocalRotation: {x: -0.038521115, y: 0.93320477, z: -0.10529418, w: -0.34140623}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1770,7 +1770,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1147477998}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.2824286, y: 5.188932, z: 17.536753}
+  m_LocalPosition: {x: 11.29303, y: 5.27, z: 13.86853}
   m_LocalScale: {x: 0.5011165, y: 0.5011165, z: 0.5011165}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1798,8 +1798,8 @@ MonoBehaviour:
   m_StreamingVersion: 20170927
   m_Priority: 10
   m_StandbyUpdate: 2
-  m_LookAt: {fileID: 792785462388262406}
-  m_Follow: {fileID: 792785462388262406}
+  m_LookAt: {fileID: 8551316548536278401}
+  m_Follow: {fileID: 8551316548536278401}
   m_CommonLens: 1
   m_Lens:
     FieldOfView: 40
@@ -2170,8 +2170,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6850003457676111037}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+      - m_Target: {fileID: 667768367795891354}
+        m_TargetAssemblyTypeName: SyncPlayerChildren, Assembly-CSharp
         m_MethodName: DisableChildBoatObjectRPC
         m_Mode: 1
         m_Arguments:
@@ -2270,42 +2270,6 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
         m_MethodName: set_interactable
         m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 792785461369461901}
-        m_TargetAssemblyTypeName: DisableComponents, Assembly-CSharp
-        m_MethodName: RemovePlayerChildFromParent
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 792785461369461901}
-        m_TargetAssemblyTypeName: DisableComponents, Assembly-CSharp
-        m_MethodName: EnableComponentsOnTarget
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-      - m_Target: {fileID: 792785461369461901}
-        m_TargetAssemblyTypeName: DisableComponents, Assembly-CSharp
-        m_MethodName: SetBoatAsChild
-        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2448,8 +2412,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6850003457676111037}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+      - m_Target: {fileID: 667768367795891354}
+        m_TargetAssemblyTypeName: SyncPlayerChildren, Assembly-CSharp
         m_MethodName: EnableChildBoatObjectRPC
         m_Mode: 1
         m_Arguments:
@@ -2544,42 +2508,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 792785461369461901}
-        m_TargetAssemblyTypeName: DisableComponents, Assembly-CSharp
-        m_MethodName: DisableComponentsOnTarget
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 792785461369461901}
-        m_TargetAssemblyTypeName: DisableComponents, Assembly-CSharp
-        m_MethodName: RemoveBoatChildFromParent
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 792785461369461901}
-        m_TargetAssemblyTypeName: DisableComponents, Assembly-CSharp
-        m_MethodName: SetPlayerAsChild
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1364279288
 GameObject:
   m_ObjectHideFlags: 0
@@ -2622,7 +2550,7 @@ RectTransform:
   - {fileID: 2003021718}
   - {fileID: 2013337617}
   m_Father: {fileID: 903591094538161116}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2946,8 +2874,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6850003457676111037}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+      - m_Target: {fileID: 667768367795891354}
+        m_TargetAssemblyTypeName: SyncPlayerChildren, Assembly-CSharp
         m_MethodName: DisableChildFishingPoleObjectRPC
         m_Mode: 1
         m_Arguments:
@@ -3326,8 +3254,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6850003457676111037}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+      - m_Target: {fileID: 667768367795891354}
+        m_TargetAssemblyTypeName: SyncPlayerChildren, Assembly-CSharp
         m_MethodName: DisableChildCannonObjectRPC
         m_Mode: 1
         m_Arguments:
@@ -3555,8 +3483,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6850003457676111037}
-        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+      - m_Target: {fileID: 667768367795891354}
+        m_TargetAssemblyTypeName: SyncPlayerChildren, Assembly-CSharp
         m_MethodName: EnableChildFishingPoleObjectRPC
         m_Mode: 1
         m_Arguments:
@@ -4460,7 +4388,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024219157}
-  m_LocalRotation: {x: -0.00061152247, y: 0.9970794, z: -0.075947255, w: -0.008028421}
+  m_LocalRotation: {x: -0.02609413, y: 0.93641365, z: -0.07132607, w: -0.34258014}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4771,7 +4699,7 @@ Transform:
   - {fileID: 1147478000}
   - {fileID: 871813}
   m_Father: {fileID: 903591094538161116}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8129137557170463758
 MonoBehaviour:
@@ -4831,6 +4759,7 @@ GameObject:
   - component: {fileID: 2486660570440537725}
   - component: {fileID: 8705247791931622526}
   - component: {fileID: 8423167872886519633}
+  - component: {fileID: 667768367795891354}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4847,17 +4776,17 @@ Transform:
   m_GameObject: {fileID: 558978503439487334}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1767.9, y: 10.72, z: 2172.4}
-  m_LocalScale: {x: 1.995544, y: 1.995544, z: 1.995544}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 903591094657808778}
-  - {fileID: 792785462388262406}
   - {fileID: 903591095533414158}
   - {fileID: 903591093943671927}
   - {fileID: 903591095819050771}
   - {fileID: 903591095894431276}
   - {fileID: 1364279292}
   - {fileID: 5866377874376819650}
+  - {fileID: 8551316548536278401}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4957,9 +4886,6 @@ MonoBehaviour:
   _joystick: {fileID: 7526317549915506027}
   _moveSpeed: 20
   cam: {fileID: 871813}
-  childCannon: {fileID: 558978502826149581}
-  childFishingPole: {fileID: 558978504170948009}
-  childBoat: {fileID: 558978504240008342}
 --- !u!114 &792785461369461898
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5000,14 +4926,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558978503439487334}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf5986339eece7148a4cb9d1e0390b6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   targetObject: {fileID: 558978503439487334}
   scriptsToDisable:
-  - {fileID: 6850003457676111037}
   - {fileID: 792785461369461898}
   boatChild: {fileID: 558978504240008342}
   playerChild: {fileID: 558978503439487334}
@@ -5080,6 +5005,21 @@ MonoBehaviour:
     InterpolateOption: 0
     InterpolateMoveTowardsSpeed: 1
     InterpolateLerpSpeed: 0
+--- !u!114 &667768367795891354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 558978503439487334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3d2a7d45dfe06f409a11a058b48994e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  childCannon: {fileID: 558978502826149581}
+  childFishingPole: {fileID: 558978504170948009}
+  childBoat: {fileID: 558978504240008342}
 --- !u!1 &792785460679456285
 GameObject:
   m_ObjectHideFlags: 0
@@ -10221,7 +10161,7 @@ Transform:
   m_Father: {fileID: 903591095925579750}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &792785462388262401
+--- !u!1 &1500671877238539955
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10229,28 +10169,28 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 792785462388262406}
+  - component: {fileID: 8551316548536278401}
   m_Layer: 0
-  m_Name: CameraLook
+  m_Name: Camera Look
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &792785462388262406
+--- !u!4 &8551316548536278401
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792785462388262401}
+  m_GameObject: {fileID: 1500671877238539955}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.18, z: 0}
+  m_LocalPosition: {x: 0, y: 1.27, z: 0.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 903591094538161116}
-  m_RootOrder: 1
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &790629688826387445
 PrefabInstance:
@@ -10259,10 +10199,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 903591094538161116}
     m_Modifications:
+    - target: {fileID: 141981783448068116, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 464665515850304985, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
         type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 464665515850304985, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
         type: 3}
@@ -10319,16 +10264,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boat
       objectReference: {fileID: 0}
-    - target: {fileID: 1249580334346238567, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
+    - target: {fileID: 952795543754626915, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
         type: 3}
-      propertyPath: ObservedComponents.Array.size
-      value: 1
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1249580334346238567, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
+    - target: {fileID: 8489586969766623390, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
         type: 3}
-      propertyPath: ObservedComponents.Array.data[0]
-      value: 
-      objectReference: {fileID: 2591047701255323304}
+      propertyPath: sceneViewId
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8979371700712998145, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
         type: 3}
       propertyPath: cam
@@ -10341,15 +10286,13 @@ PrefabInstance:
       objectReference: {fileID: 7526317549915506027}
     - target: {fileID: 8979371700712998145, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
         type: 3}
-      propertyPath: childCannon
-      value: 
-      objectReference: {fileID: 558978502826149581}
-    - target: {fileID: 8979371700712998145, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
-        type: 3}
-      propertyPath: childFishingPole
-      value: 
-      objectReference: {fileID: 558978504170948009}
-    m_RemovedComponents: []
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8979371700712998145, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb, type: 3}
+    - {fileID: 141981783448068114, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb, type: 3}
+    - {fileID: 141981783448068116, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb, type: 3}
 --- !u!1 &558978504240008342 stripped
 GameObject:
@@ -10357,39 +10300,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 790629688826387445}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2591047701255323304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 558978504240008342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8efc6b1d64977384eb3405357896c656, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_PositionModel:
-    SynchronizeEnabled: 1
-    TeleportEnabled: 1
-    TeleportIfDistanceGreaterThan: 3
-    InterpolateOption: 2
-    InterpolateMoveTowardsSpeed: 1
-    InterpolateLerpSpeed: 1
-    ExtrapolateOption: 0
-    ExtrapolateSpeed: 1
-    ExtrapolateIncludingRoundTripTime: 1
-    ExtrapolateNumberOfStoredPositions: 1
-  m_RotationModel:
-    SynchronizeEnabled: 1
-    InterpolateOption: 1
-    InterpolateRotateTowardsSpeed: 180
-    InterpolateLerpSpeed: 5
-  m_ScaleModel:
-    SynchronizeEnabled: 0
-    InterpolateOption: 0
-    InterpolateMoveTowardsSpeed: 1
-    InterpolateLerpSpeed: 0
 --- !u!4 &903591095894431276 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 464665515850304985, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
@@ -10501,7 +10411,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 6bf6f1cc29386a44db4dec6ab6dbef77,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6bf6f1cc29386a44db4dec6ab6dbef77,
         type: 3}
@@ -10623,7 +10533,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: dc6255026fa3fb24dbf009197a85a02b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: dc6255026fa3fb24dbf009197a85a02b,
         type: 3}
@@ -10824,7 +10734,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: ab71559b9db059f46a12d1a58b3c0617,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: ab71559b9db059f46a12d1a58b3c0617,
         type: 3}

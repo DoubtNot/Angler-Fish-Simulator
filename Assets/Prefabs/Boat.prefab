@@ -75,14 +75,14 @@ GameObject:
   - component: {fileID: 141981783448068115}
   - component: {fileID: 141981783448068116}
   - component: {fileID: 8979371700712998145}
-  - component: {fileID: 1249580334346238567}
+  - component: {fileID: 8489586969766623390}
   m_Layer: 0
   m_Name: Boat
   m_TagString: Boat
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &464665515850304985
 Transform:
   m_ObjectHideFlags: 0
@@ -166,10 +166,7 @@ MonoBehaviour:
   _joystick: {fileID: 0}
   _moveSpeed: 40
   cam: {fileID: 0}
-  childCannon: {fileID: 0}
-  childFishingPole: {fileID: 0}
-  childBoat: {fileID: 952795543754626915}
---- !u!114 &1249580334346238567
+--- !u!114 &8489586969766623390
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

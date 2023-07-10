@@ -4,7 +4,6 @@ using UnityEngine;
 using Photon.Pun;
 using Cinemachine;
 
-[RequireComponent(typeof(Rigidbody))]
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private Rigidbody _rigidbody;
@@ -13,11 +12,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] Transform cam;
 
-    public GameObject childCannon;
-    public GameObject childFishingPole;
-    public GameObject childBoat;
-
-
+ 
     PhotonView view;
 
 
@@ -26,7 +21,13 @@ public class PlayerController : MonoBehaviour
         view = GetComponent<PhotonView>();
     }
 
-  
+    private void Start()
+    {
+        if (!view.IsMine)
+        {
+            _rigidbody.isKinematic = true;
+        }
+    }
 
     private void FixedUpdate()
     {
@@ -63,84 +64,5 @@ public class PlayerController : MonoBehaviour
         }
        
               
-    }
-
-
-    // Enable the child game object and synchronize across the network
-    [PunRPC]
-    void EnableChildCannonObject()
-    {
-        childCannon.SetActive(true);
-    }
-
-    // Disable the child game object and synchronize across the network
-    [PunRPC]
-    void DisableChildCannonObject()
-    {
-        childCannon.SetActive(false);
-    }
-
-    // Call this method when you want to enable the child object
-    public void EnableChildCannonObjectRPC()
-    {
-        view.RPC("EnableChildCannonObject", RpcTarget.All);
-    }
-
-    // Call this method when you want to disable the child object
-    public void DisableChildCannonObjectRPC()
-    {
-        view.RPC("DisableChildCannonObject", RpcTarget.All);
-    }
-
-    // Enable the child game object and synchronize across the network
-    [PunRPC]
-    void EnableChildFishingPoleObject()
-    {
-        childFishingPole.SetActive(true);
-    }
-
-    // Disable the child game object and synchronize across the network
-    [PunRPC]
-    void DisableChildFishingPoleObject()
-    {
-        childFishingPole.SetActive(false);
-    }
-
-    // Call this method when you want to enable the child object
-    public void EnableChildFishingPoleObjectRPC()
-    {
-        view.RPC("EnableChildFishingPoleObject", RpcTarget.All);
-    }
-
-    // Call this method when you want to disable the child object
-    public void DisableChildFishingPoleObjectRPC()
-    {
-        view.RPC("DisableChildFishingPoleObject", RpcTarget.All);
-    }
-
-    // Enable the child game object and synchronize across the network
-    [PunRPC]
-    void EnableChildBoatObject()
-    {
-        childBoat.SetActive(true);
-    }
-
-    // Disable the child game object and synchronize across the network
-    [PunRPC]
-    void DisableChildBoatObject()
-    {
-        childBoat.SetActive(false);
-    }
-
-    // Call this method when you want to enable the child object
-    public void EnableChildBoatObjectRPC()
-    {
-        view.RPC("EnableChildBoatObject", RpcTarget.All);
-    }
-
-    // Call this method when you want to disable the child object
-    public void DisableChildBoatObjectRPC()
-    {
-        view.RPC("DisableChildBoatObject", RpcTarget.All);
     }
 }
