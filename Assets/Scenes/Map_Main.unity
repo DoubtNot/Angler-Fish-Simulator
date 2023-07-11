@@ -15622,7 +15622,11 @@ MonoBehaviour:
   _rigidbody: {fileID: 893847472}
   _joystick: {fileID: 688803509}
   _moveSpeed: 20
+  _boostTimer: 0
+  boosting: 0
   cam: {fileID: 0}
+  digButton: {fileID: 0}
+  treasureDigButton: {fileID: 0}
 --- !u!1001 &924338583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31535,7 +31539,11 @@ MonoBehaviour:
   _rigidbody: {fileID: 1911840515}
   _joystick: {fileID: 688803509}
   _moveSpeed: 30
+  _boostTimer: 0
+  boosting: 0
   cam: {fileID: 0}
+  digButton: {fileID: 0}
+  treasureDigButton: {fileID: 0}
 --- !u!54 &1911840515
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33272,24 +33280,12 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 871813, guid: 7ef9bc0c371570748be0f9ab43be5fcc, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 22.091919
-      objectReference: {fileID: 0}
-    - target: {fileID: 871813, guid: 7ef9bc0c371570748be0f9ab43be5fcc, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 9.180001
-      objectReference: {fileID: 0}
-    - target: {fileID: 871813, guid: 7ef9bc0c371570748be0f9ab43be5fcc, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 27.146729
-      objectReference: {fileID: 0}
-    - target: {fileID: 871813, guid: 7ef9bc0c371570748be0f9ab43be5fcc, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.008016005
+      value: -0.008015987
       objectReference: {fileID: 0}
     - target: {fileID: 871813, guid: 7ef9bc0c371570748be0f9ab43be5fcc, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.00075706915
+      value: -0.0007570676
       objectReference: {fileID: 0}
     - target: {fileID: 871813, guid: 7ef9bc0c371570748be0f9ab43be5fcc, type: 3}
       propertyPath: m_LocalRotation.y
@@ -33457,11 +33453,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1355916342558382187, guid: 7ef9bc0c371570748be0f9ab43be5fcc,
-        type: 3}
-      propertyPath: sceneViewId
-      value: 3
-      objectReference: {fileID: 0}
     - target: {fileID: 2486660570440537725, guid: 7ef9bc0c371570748be0f9ab43be5fcc,
         type: 3}
       propertyPath: sceneViewId
@@ -33471,11 +33462,6 @@ PrefabInstance:
         type: 3}
       propertyPath: sceneViewId
       value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 9163123050896860011, guid: 7ef9bc0c371570748be0f9ab43be5fcc,
-        type: 3}
-      propertyPath: sceneViewId
-      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7ef9bc0c371570748be0f9ab43be5fcc, type: 3}

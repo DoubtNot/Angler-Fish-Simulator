@@ -14581,7 +14581,11 @@ MonoBehaviour:
   _rigidbody: {fileID: 893847472}
   _joystick: {fileID: 0}
   _moveSpeed: 20
+  _boostTimer: 0
+  boosting: 0
   cam: {fileID: 0}
+  digButton: {fileID: 0}
+  treasureDigButton: {fileID: 0}
 --- !u!1001 &924338583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27782,7 +27786,11 @@ MonoBehaviour:
   _rigidbody: {fileID: 1911840515}
   _joystick: {fileID: 0}
   _moveSpeed: 30
+  _boostTimer: 0
+  boosting: 0
   cam: {fileID: 0}
+  digButton: {fileID: 0}
+  treasureDigButton: {fileID: 0}
 --- !u!54 &1911840515
 Rigidbody:
   m_ObjectHideFlags: 0
