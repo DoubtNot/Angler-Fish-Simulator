@@ -12,6 +12,8 @@ TagManager:
   - SpawnedPrefab
   - Bullet
   - Menu
+  - FlagHolderBlue
+  - FlagHolderRed
   layers:
   - Default
   - TransparentFX

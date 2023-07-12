@@ -24,4 +24,14 @@ public class SceneSwitch : MonoBehaviour
 	{
 		SceneManager.LoadScene(level);
 	}
+
+	private void OnTriggerEnter(Collider other)
+	{
+		if (other.CompareTag("Player"))
+		{
+			SceneManager.LoadScene(level);
+		}
+
+	}
+
 }
