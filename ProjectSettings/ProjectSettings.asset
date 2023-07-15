@@ -153,6 +153,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Android: com.DefaultCompany.BoredAnglerfish
     Standalone: com.DefaultCompany.Bored-Anglerfish
   buildNumber:
     Standalone: 0
@@ -883,7 +884,14 @@ PlayerSettings:
   XboxOneOverrideIdentityPublisher: 
   vrEditorSettings: {}
   cloudServicesEnabled:
+    Build: 0
+    Collab: 0
+    Game Performance: 0
+    Legacy Analytics: 0
+    Purchasing: 0
+    UDP: 0
     UNet: 1
+    Unity Ads: 0
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -897,11 +905,11 @@ PlayerSettings:
     m_VersionName: 
   apiCompatibilityLevel: 6
   activeInputHandler: 0
-  cloudProjectId: 
+  cloudProjectId: aef90845-b6ba-4367-8aa8-054f018ff508
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 
-  organizationId: 
+  projectName: Bored Anglerfish
+  organizationId: unity_vbezrsbbod14fg
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
   playerDataPath: 
