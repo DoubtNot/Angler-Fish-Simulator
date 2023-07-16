@@ -38,10 +38,9 @@ public class PlayerControllerMulti : MonoBehaviour
         _moveSpeed = 20f; //Speed of the player when the boat is not active
     }
 
-    public void LeaveLobby()
+    public void DisconnectPlayer()
     {
-        PhotonNetwork.LeaveLobby();
-        SceneManager.LoadScene("MainMenu");
+        PhotonNetwork.Disconnect();
     }
 
     public void CloseApp()

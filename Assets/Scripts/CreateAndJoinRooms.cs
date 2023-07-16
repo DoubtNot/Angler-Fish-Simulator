@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using Photon.Pun;
 using TMPro;
+using Photon.Realtime;
 
 public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
 {
@@ -27,5 +28,4 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
     {
         PhotonNetwork.LoadLevel("Map_Multiplayer");
     }
-
 }
