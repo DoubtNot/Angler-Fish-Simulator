@@ -11,9 +11,14 @@ public class AnimationController : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    public void PlayAnimation()
+    public void PlayZoomAnimation()
     {
         // Play the specific animation
         animator.Play("CameraZoomIntoWhiteboard");
+    }
+
+    public void PlayRetreatAnimation()
+    {
+        animator.Play("CameraZoomOutFromWhiteboard");
     }
 }

@@ -17,6 +17,7 @@ TagManager:
   - CannonBall
   - PufferFish
   - Ammo
+  - TreasureBoat
   layers:
   - Default
   - TransparentFX
