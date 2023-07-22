@@ -11,6 +11,8 @@ public class FishingGame : MonoBehaviour
     public GameObject castButton;
     public GameObject fishingLine;
 
+    public GameObject smokeyBurst;
+
     public Transform spawnPoint; // Reference to the end of the fishing fish spawn
 
     public float minWaitTime = 5f; // Minimum waiting time before fish spawns
@@ -37,6 +39,9 @@ public class FishingGame : MonoBehaviour
                 catchButton.SetActive (true);
                 isCounting = false;
 
+                GameObject smoke = Instantiate(smokeyBurst, spawnPoint.position, Quaternion.identity);
+
+                Destroy(smoke, 2.0f);
             }
         }
     }

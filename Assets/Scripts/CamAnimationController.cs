@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AnimationController : MonoBehaviour
+public class CamAnimationController : MonoBehaviour
 {
     public Animator animator;
 
