@@ -569,19 +569,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 364215591}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3460799437415837728}
-        m_TargetAssemblyTypeName: ProjectileLaunch, Assembly-CSharp
-        m_MethodName: SpawnAndLaunchProjectile
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &366372915
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,7 +1212,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 849098537}
-  m_LocalRotation: {x: 0.085404135, y: -0.6438155, z: 0.07264225, w: 0.75692195}
+  m_LocalRotation: {x: 0.085404165, y: -0.6438155, z: 0.07264227, w: 0.75692195}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2795,7 +2783,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1364279292
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4669,7 +4657,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024219157}
-  m_LocalRotation: {x: 0.057852644, y: -0.6460294, z: 0.049207754, w: 0.7595247}
+  m_LocalRotation: {x: 0.057852633, y: -0.64602935, z: 0.049207743, w: 0.7595247}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5069,8 +5057,11 @@ MonoBehaviour:
   projectileTypes:
   - {fileID: 8618517684812167192, guid: e56868bab70a43e4fb3129aca6613298, type: 3}
   - {fileID: 1424119315705644870, guid: ebc2dc2c96da8d14ab30870cb3816196, type: 3}
+  launchCooldown: 0.5
+  launchButton: {fileID: 364215590}
   spawnPoint: {fileID: 792785461235544687}
   launchForce: 100
+  verticalForce: 0.2
   smokeyBurst: {fileID: 950930809333698622, guid: 54cf83c7b04a6564a8334165b22d7c82,
     type: 3}
 --- !u!1 &558978503439487334
@@ -6632,11 +6623,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 903591094538161116}
     m_Modifications:
-    - target: {fileID: 141981783448068116, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 464665515850304985, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
         type: 3}
       propertyPath: m_RootOrder
@@ -6697,46 +6683,7 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boat
       objectReference: {fileID: 0}
-    - target: {fileID: 952795543754626915, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249580334346238567, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
-        type: 3}
-      propertyPath: ObservedComponents.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1249580334346238567, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
-        type: 3}
-      propertyPath: ObservedComponents.Array.data[0]
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8979371700712998145, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
-        type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 871813}
-    - target: {fileID: 8979371700712998145, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
-        type: 3}
-      propertyPath: _joystick
-      value: 
-      objectReference: {fileID: 7526317549915506027}
-    - target: {fileID: 8979371700712998145, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
-        type: 3}
-      propertyPath: childCannon
-      value: 
-      objectReference: {fileID: 558978502826149581}
-    - target: {fileID: 8979371700712998145, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb,
-        type: 3}
-      propertyPath: childFishingPole
-      value: 
-      objectReference: {fileID: 558978504170948009}
-    m_RemovedComponents:
-    - {fileID: 8979371700712998145, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb, type: 3}
-    - {fileID: 1249580334346238567, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb, type: 3}
-    - {fileID: 141981783448068116, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb, type: 3}
-    - {fileID: 141981783448068114, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7854b86bc5c66294bb6f4cb7ca2f3fcb, type: 3}
 --- !u!1 &558978504240008342 stripped
 GameObject:
@@ -7616,6 +7563,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Fixed Joystick
+      objectReference: {fileID: 0}
+    - target: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+        type: 3}
+      propertyPath: deadZone
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 2929252285020697096, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}

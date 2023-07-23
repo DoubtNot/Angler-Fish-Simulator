@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu_Links.unity
     guid: ab7ab9a06aede9343b1cb84d25f64f08
   - enabled: 1
+    path: Assets/Scenes/MainMenu_LoadingScene.unity
+    guid: f3ee6825a76256c46b8116776608d7e1
+  - enabled: 1
     path: Assets/Scenes/Map_Solo.unity
     guid: 32f456b81a65c8648ae1c7f7375fa68b
   - enabled: 1
