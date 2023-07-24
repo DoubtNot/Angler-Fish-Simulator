@@ -119,13 +119,12 @@ public class CreateAndJoinRooms : MonoBehaviourPunCallbacks
             yield return null;
         }
 
-        // Load the multiplayer map scene
-        PhotonNetwork.LoadLevel("Map_Multiplayer");
+        OnJoinedRoom();
     }
 
     public override void OnJoinedRoom()
     {
         // You can optionally handle the room join event here, if needed.
-        // PhotonNetwork.LoadLevel("Map_Multiplayer"); // Moved to the coroutine
+        PhotonNetwork.LoadLevel("Map_Multiplayer"); // Moved to the coroutine
     }
 }
