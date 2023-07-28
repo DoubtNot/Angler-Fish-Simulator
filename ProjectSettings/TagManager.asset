@@ -18,6 +18,7 @@ TagManager:
   - PufferFish
   - Ammo
   - TreasureBoat
+  - EnemyAmmo
   layers:
   - Default
   - TransparentFX

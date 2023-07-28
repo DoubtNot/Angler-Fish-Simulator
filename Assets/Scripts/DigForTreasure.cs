@@ -17,6 +17,11 @@ public class DigForTreasure : MonoBehaviour
     public GameObject boatPrefab;
 
 
+    public void Start()
+    {
+        digFailButton.SetActive(true);
+    }
+
     public void NoTreasureFound()
     {
         GameObject smoke = Instantiate(smokeyBurst, spawnSmokePoint.position, Quaternion.identity);
