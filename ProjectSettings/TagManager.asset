@@ -19,6 +19,7 @@ TagManager:
   - Ammo
   - TreasureBoat
   - EnemyAmmo
+  - Grass
   layers:
   - Default
   - TransparentFX

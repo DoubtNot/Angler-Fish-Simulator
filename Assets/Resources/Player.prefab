@@ -4684,7 +4684,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2024219157}
-  m_LocalRotation: {x: 0.057852633, y: -0.64602935, z: 0.049207743, w: 0.7595247}
+  m_LocalRotation: {x: 0.057852644, y: -0.6460294, z: 0.049207754, w: 0.7595247}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -5361,6 +5361,8 @@ MonoBehaviour:
   player: {fileID: 903591094538161116}
   miniMapRect: {fileID: 5751326528418421600}
   mapDimensions: {x: 7200, y: 7200}
+  xOffset: 10
+  yOffset: 10
 --- !u!1 &792785461129233655
 GameObject:
   m_ObjectHideFlags: 0
@@ -7883,6 +7885,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Fixed Camera Joystick
       objectReference: {fileID: 0}
+    - target: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
+        type: 3}
+      propertyPath: deadZone
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 2929252285020697096, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -8078,7 +8085,7 @@ PrefabInstance:
     - target: {fileID: 2929252283123773951, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
       propertyPath: deadZone
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 2929252285020697096, guid: aaa2c939c0359ac4dbce3f49e8b90252,
         type: 3}
