@@ -6,7 +6,7 @@ public class BridgeActivator : MonoBehaviour
     public GameObject[] activateObjects; // Array to hold the bridge objects you want to activate.
     public Button[] uiButtons; // Array to hold the UI buttons you want to interact with.
 
-    public GameObject[] deactivateObjects;
+    public GameObject[] deactivateObjects; // Array to hold the GameObjects you want to deactivate.
 
     private void Start()
     {
@@ -21,6 +21,7 @@ public class BridgeActivator : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            // Enable all gameobjects in the string of activeObjects.
             foreach (GameObject activateObjects in activateObjects)
             {
                 activateObjects.SetActive(true);
@@ -30,6 +31,12 @@ public class BridgeActivator : MonoBehaviour
             foreach (Button button in uiButtons)
             {
                 button.interactable = true;
+            }
+
+            // Deactivate the string of gameobjects upon trigger enter.
+            foreach (GameObject deactivateObjects in deactivateObjects)
+            {
+                deactivateObjects.SetActive(false);
             }
         }
     }
