@@ -83,7 +83,7 @@ MonoBehaviour:
   underWaterAngularDrag: 1
   airDrag: 0
   airAngularDrag: 0.05
-  floatingPower: 4.5
+  floatingPower: 10
   underwater: 0
 --- !u!114 &2864553285729068693
 MonoBehaviour:

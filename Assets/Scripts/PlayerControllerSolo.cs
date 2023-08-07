@@ -13,11 +13,12 @@ public class PlayerControllerSolo : MonoBehaviour
 
     public GameObject skateboard;
     public GameObject boat;
-    public GameObject skateboardButton;
-    public GameObject boatButton;
-    public Button boatOnButton;
-    public Button sk8BoardOnButton;
 
+    public GameObject skateboardOffButton;
+    public GameObject boatOffButton;
+
+    public Button sk8BoardOnButton;
+   
     private bool isBoatActive = false;
     private bool isSkateboardOn = false;
 
@@ -80,10 +81,11 @@ public class PlayerControllerSolo : MonoBehaviour
     {
         if (other.CompareTag("Water"))
         {
-            // Deactivate skateboard and disable its button
+            // Deactivate skateboard and disable its OFF button
             skateboard.SetActive(false);
-            skateboardButton.SetActive(false);
+            skateboardOffButton.SetActive(false);
             isSkateboardOn = false;
+            sk8BoardOnButton.interactable = false; // If the player has collided with the water then the sk8Board ON button won't work
         }
     }
 
@@ -93,8 +95,9 @@ public class PlayerControllerSolo : MonoBehaviour
         {
             // Deactivate boat and disable its button
             boat.SetActive(false);
-            boatButton.SetActive(false);
+            boatOffButton.SetActive(false);
             isBoatActive = false;
+            sk8BoardOnButton.interactable = true; // If the player has collided with the land then the sk8Board ON button will work.
         }
     }
 
@@ -102,13 +105,22 @@ public class PlayerControllerSolo : MonoBehaviour
     {
         isBoatActive = true;
         isSkateboardOn = false;
-        BoatMovementSpeed();
+
+        sk8BoardOnButton.interactable = false;
     }
 
     public void OnSk8BoardOnButtonPressed()
     {
         isBoatActive = false;
         isSkateboardOn = true;
-        BoatMovementSpeed();
+    }
+
+    public void OnBoatSk8OffButtonPressed()
+    {
+        isBoatActive = false;
+        isSkateboardOn = false;
+
+        boatOffButton.SetActive(false);
+        skateboardOffButton.SetActive(false);
     }
 }
