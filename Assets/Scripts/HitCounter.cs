@@ -49,7 +49,7 @@ public class HitCounter : MonoBehaviour
                 uiImage.SetActive(false);
                 
                 //reset attached object's position to (0,0,0)
-                transform.position = new Vector3 (470, 30, 400);
+                transform.position = new Vector3 (503, 6, -539);
             }
         }
     }

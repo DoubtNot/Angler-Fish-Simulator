@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody))]
 public class PlayerControllerSolo : MonoBehaviour
@@ -10,9 +11,17 @@ public class PlayerControllerSolo : MonoBehaviour
     [SerializeField] private FixedJoystick _joystick;
     [SerializeField] private float _moveSpeed;
 
+    public GameObject skateboard;
+    public GameObject boat;
+    public GameObject skateboardButton;
+    public GameObject boatButton;
+    public Button boatOnButton;
+    public Button sk8BoardOnButton;
+
+    private bool isBoatActive = false;
+    private bool isSkateboardOn = false;
 
     [SerializeField] Transform cam;
-
 
     public void BoatMovementSpeed()
     {
@@ -57,5 +66,49 @@ public class PlayerControllerSolo : MonoBehaviour
                 transform.rotation = Quaternion.LookRotation(_rigidbody.velocity);
             }
 
+        if (isBoatActive || isSkateboardOn)
+        {
+            BoatMovementSpeed();
+        }
+        else
+        {
+            PlayerMovementSpeed();
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Water"))
+        {
+            // Deactivate skateboard and disable its button
+            skateboard.SetActive(false);
+            skateboardButton.SetActive(false);
+            isSkateboardOn = false;
+        }
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Land"))
+        {
+            // Deactivate boat and disable its button
+            boat.SetActive(false);
+            boatButton.SetActive(false);
+            isBoatActive = false;
+        }
+    }
+
+    public void OnBoatOnButtonPressed()
+    {
+        isBoatActive = true;
+        isSkateboardOn = false;
+        BoatMovementSpeed();
+    }
+
+    public void OnSk8BoardOnButtonPressed()
+    {
+        isBoatActive = false;
+        isSkateboardOn = true;
+        BoatMovementSpeed();
     }
 }
