@@ -87,6 +87,11 @@ public class PlayerControllerSolo : MonoBehaviour
             isSkateboardOn = false;
             sk8BoardOnButton.interactable = false; // If the player has collided with the water then the sk8Board ON button won't work
         }
+
+        if (other.CompareTag("ToiletWater"))
+        {
+            transform.position = new Vector3 (0,-10,0);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)

@@ -20,6 +20,7 @@ TagManager:
   - TreasureBoat
   - EnemyAmmo
   - Bridge
+  - ToiletWater
   layers:
   - Default
   - TransparentFX
