@@ -21,6 +21,8 @@ TagManager:
   - EnemyAmmo
   - Bridge
   - ToiletWater
+  - Bowling
+  - BowlingPin
   layers:
   - Default
   - TransparentFX

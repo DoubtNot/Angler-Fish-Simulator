@@ -101,8 +101,21 @@ public class ProjectileLaunch : MonoBehaviour
 
             Destroy(triggeredProjectile); // Destroy the collided GameObject
         }
+
+        if (collision.gameObject.CompareTag("Bowling"))
+        {
+            launchForce = launchForce * 2;
+        }
     }
 
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.gameObject.CompareTag("Bowling"))
+        {
+            launchForce = 100f;
+        }
+    }
 
     private GameObject FindMatchingProjectile(string prefabName)
     {
