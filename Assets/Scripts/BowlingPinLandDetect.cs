@@ -9,7 +9,7 @@ public class BowlingPinLandDetect : MonoBehaviour
         if (other.gameObject.CompareTag("Land"))
         {
             Debug.Log("Land Collision Detected");
-            Destroy(this.gameObject); // Destroy the parent of the object with this script
+            Destroy(this.gameObject, 5f); // Destroy the parent of the object with this script
         }
     }
 }

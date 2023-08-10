@@ -7,11 +7,9 @@ public class BowlingPinReset : MonoBehaviour
     public GameObject bowlingPinPrefab;
     public Transform respawnPinPoint;
 
-    private GameObject[] spawnedBowlingPins; // Changed to an array to store multiple pins
+    private GameObject[] spawnedBowlingPins;
 
-    public GameObject[] deactivateObjects; // Array to hold the GameObjects you want to deactivate.
-    public GameObject[] activateObjects; // Array to hold the bridge objects you want to activate.
-
+    private bool isResetting = false; // Flag to track if resetting is in progress
 
     private void Update()
     {
@@ -20,31 +18,36 @@ public class BowlingPinReset : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("CannonBall"))
+        if (other.gameObject.CompareTag("CannonBall") && !isResetting)
         {
+            isResetting = true; // Start resetting process
+
             foreach (GameObject pin in spawnedBowlingPins)
             {
                 Destroy(pin, 15.0f);
             }
 
-            Invoke("RespawnPins", 16.0f);
-
-            // Deactivate the string of gameobjects upon trigger enter.
-            foreach (GameObject deactivateObjects in deactivateObjects)
-            {
-                deactivateObjects.SetActive(false);
-            }
+            Invoke("CleanUpPins", 16.0f);
         }
+    }
+
+    private void CleanUpPins()
+    {
+        foreach (GameObject pin in spawnedBowlingPins)
+        {
+            Destroy(pin);
+        }
+
+        Invoke("RespawnPins", 1.0f);
     }
 
     private void RespawnPins()
     {
-        GameObject newPin = Instantiate(bowlingPinPrefab, respawnPinPoint.position, Quaternion.identity);
-
-        // Enable all gameobjects in the string of activeObjects.
-        foreach (GameObject activateObjects in activateObjects)
+        if (spawnedBowlingPins.Length == 0) // Check if no pins are present
         {
-            activateObjects.SetActive(true);
+            GameObject newPin = Instantiate(bowlingPinPrefab, respawnPinPoint.position, Quaternion.identity);
         }
+
+        isResetting = false; // Reset the flag
     }
 }
