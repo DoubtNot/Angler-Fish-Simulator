@@ -27,7 +27,7 @@ public class SceneSwitch : MonoBehaviour
 
 	private void OnTriggerEnter(Collider other)
 	{
-		if (other.CompareTag("Player"))
+		if (other.CompareTag("Player") || other.CompareTag("CannonBall") || other.CompareTag("PufferFish"))
 		{
 			SceneManager.LoadScene(level);
 		}

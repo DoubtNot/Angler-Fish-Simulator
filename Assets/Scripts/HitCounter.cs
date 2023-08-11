@@ -12,6 +12,9 @@ public class HitCounter : MonoBehaviour
     private float healthImageTimer; // Timer to track the health image deactivation.
     private float hitsDecreaseTimer; // Timer to track hits decrease interval.
 
+    public Vector3 resetLocation; // Variable for specifying the reset location.
+
+
     private void Start()
     {
         // Deactivate the UI image at the start of the game.
@@ -48,8 +51,8 @@ public class HitCounter : MonoBehaviour
                 currentHits = 1;
                 uiImage.SetActive(false);
                 
-                //reset attached object's position to (0,0,0)
-                transform.position = new Vector3 (15, 5092, 108);
+                //reset attached object's position to (15,5092,108) for OpenWorlds and (0,0,0) for Tutorial.
+                transform.position = resetLocation;
             }
         }
     }
