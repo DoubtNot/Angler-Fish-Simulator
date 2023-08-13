@@ -5,27 +5,21 @@ using UnityEngine.UI;
 
 public class DigForTreasure : MonoBehaviour
 {
-    public GameObject digBoatButton;
-    public GameObject digFailButton;
-
+    public GameObject digButton;
     public GameObject smokeyBurst;
-
-    public Transform spawnTreasurePoint; // The point where the treasure should spawn
-
     public Transform spawnSmokePoint;
+    public GameObject[] boatTreasures; // Array of boat treasure prefabs
 
-    public GameObject boatPrefab;
-
+    public bool isInBoatTrigger = false;
 
     public void Start()
     {
-        digFailButton.SetActive(true);
+        digButton.SetActive(true);
     }
 
-    public void NoTreasureFound()
+    public void SpawnSmoke()
     {
         GameObject smoke = Instantiate(smokeyBurst, spawnSmokePoint.position, Quaternion.identity);
-
         Destroy(smoke, 2.0f);
     }
 
@@ -33,33 +27,37 @@ public class DigForTreasure : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("TreasureBoat"))
         {
-            digBoatButton.SetActive (true);
-            digFailButton.SetActive(false);
+            isInBoatTrigger = true;
         }
     }
+
     private void OnTriggerExit(Collider collision)
     {
         if (collision.gameObject.CompareTag("TreasureBoat"))
         {
-            digBoatButton.SetActive(false);
-            digFailButton.SetActive(true);
+            isInBoatTrigger = false;
         }
     }
 
-    public void TreasureIsFound()
+    public void DigForTreasureAction()
     {
-        // Spawn the treasure at the spawn point
-        GameObject treasure = Instantiate(boatPrefab, spawnTreasurePoint.position, Quaternion.identity);
+        if (isInBoatTrigger)
+        {
+            int randomIndex = Random.Range(0, boatTreasures.Length);
+            GameObject chosenBoat = Instantiate(boatTreasures[randomIndex], spawnSmokePoint.position, Quaternion.identity);
 
-        GameObject smoke = Instantiate(smokeyBurst, spawnTreasurePoint.position, Quaternion.identity);
+            // Deactivate the object with the "TreasureBoat" tag
+            GameObject treasureBoat = GameObject.FindGameObjectWithTag("TreasureBoat");
+            if (treasureBoat != null)
+            {
+                treasureBoat.SetActive(false);
+            }
 
-        digBoatButton.SetActive(false);
+            isInBoatTrigger = false;
+        }
 
-        Destroy(smoke, 2.0f);
+        SpawnSmoke(); // Always spawn smoke
     }
 
 
 }
-
-
-
