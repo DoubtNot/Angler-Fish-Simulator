@@ -23,6 +23,7 @@ TagManager:
   - ToiletWater
   - Bowling
   - BowlingPin
+  - TreasureShovel
   layers:
   - Default
   - TransparentFX

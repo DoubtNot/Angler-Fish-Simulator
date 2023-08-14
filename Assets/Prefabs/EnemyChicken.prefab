@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 3630701282894546897}
   - component: {fileID: 3630701282894546896}
   - component: {fileID: 3630701282894546898}
+  - component: {fileID: 5146825273961804014}
   m_Layer: 0
   m_Name: EnemyChicken
   m_TagString: Untagged
@@ -128,6 +129,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   smokeyBurst: {fileID: 950930809333698622, guid: 54cf83c7b04a6564a8334165b22d7c82,
     type: 3}
+--- !u!114 &5146825273961804014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4513660455852521988}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25f4443653b1a0d45ad4912c22040978, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floaters:
+  - {fileID: 3884476628589437118}
+  underWaterDrag: 3
+  underWaterAngularDrag: 1
+  airDrag: 0
+  airAngularDrag: 0.05
+  floatingPower: 60
+  underwater: 0
 --- !u!1 &8041076878965727044
 GameObject:
   m_ObjectHideFlags: 0
