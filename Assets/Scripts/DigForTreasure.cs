@@ -14,9 +14,11 @@ public class DigForTreasure : MonoBehaviour
     public GameObject[] treasureTriggers; // Array of the colliders that set off the bools below ("isIn...Trigger")
 
     public GameObject[] boatTreasures; // Array of boat treasure prefabs
+    public GameObject[] fishBarrelTreasures; // Array of the fish barrel treasure prefabs
     public GameObject[] shovelTreasures; // Array of shovel treasure prefabs
 
     public bool isInBoatTrigger = false;
+    public bool isInFishBarrelTrigger = false;
     public bool isInShovelTrigger = false;
 
     public void Start()
@@ -41,6 +43,11 @@ public class DigForTreasure : MonoBehaviour
         {
             isInShovelTrigger = true;
         }
+
+        if (collision.gameObject.CompareTag("TreasureFishBarrel"))
+        {
+            isInFishBarrelTrigger = true;
+        }
     }
 
     private void OnTriggerExit(Collider collision)
@@ -54,6 +61,11 @@ public class DigForTreasure : MonoBehaviour
         {
             isInShovelTrigger = false;
         }
+
+        if (collision.gameObject.CompareTag("TreasureFishBarrel"))
+        {
+            isInFishBarrelTrigger = false;
+        }
     }
 
     public void DigForTreasureAction()
@@ -64,6 +76,14 @@ public class DigForTreasure : MonoBehaviour
             GameObject chosenBoat = Instantiate(boatTreasures[randomIndex], spawnSmokePoint.position, Quaternion.identity);
 
             isInBoatTrigger = false;
+        }
+
+        if (isInFishBarrelTrigger)
+        {
+            int randomIndex = Random.Range(0, fishBarrelTreasures.Length);
+            GameObject chosenFishBarrel = Instantiate(fishBarrelTreasures[randomIndex], spawnSmokePoint.position, Quaternion.identity);
+
+            isInFishBarrelTrigger = false;
         }
 
         if (isInShovelTrigger)
