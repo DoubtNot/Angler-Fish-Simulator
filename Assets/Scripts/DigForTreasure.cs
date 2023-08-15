@@ -75,6 +75,20 @@ public class DigForTreasure : MonoBehaviour
             int randomIndex = Random.Range(0, boatTreasures.Length);
             GameObject chosenBoat = Instantiate(boatTreasures[randomIndex], spawnSmokePoint.position, Quaternion.identity);
 
+            // Deactivate every object in the treasureMaps array
+            foreach (GameObject treasureMap in treasureMaps)
+            {
+                treasureMap.SetActive(false);
+            }
+
+            // Deactivate every object in the treasureTriggers array
+            foreach (GameObject treasureTrigger in treasureTriggers)
+            {
+                treasureTrigger.SetActive(false);
+            }
+
+            noTreasureMapText.SetActive(true);
+
             isInBoatTrigger = false;
         }
 
@@ -82,6 +96,20 @@ public class DigForTreasure : MonoBehaviour
         {
             int randomIndex = Random.Range(0, fishBarrelTreasures.Length);
             GameObject chosenFishBarrel = Instantiate(fishBarrelTreasures[randomIndex], spawnSmokePoint.position, Quaternion.identity);
+
+            // Deactivate every object in the treasureMaps array
+            foreach (GameObject treasureMap in treasureMaps)
+            {
+                treasureMap.SetActive(false);
+            }
+
+            // Deactivate every object in the treasureTriggers array
+            foreach (GameObject treasureTrigger in treasureTriggers)
+            {
+                treasureTrigger.SetActive(false);
+            }
+
+            noTreasureMapText.SetActive(true);
 
             isInFishBarrelTrigger = false;
         }
@@ -91,22 +119,22 @@ public class DigForTreasure : MonoBehaviour
             int randomIndex = Random.Range(0, shovelTreasures.Length);
             GameObject chosenShovel = Instantiate(shovelTreasures[randomIndex], spawnSmokePoint.position, Quaternion.identity);
 
+            // Deactivate every object in the treasureMaps array
+            foreach (GameObject treasureMap in treasureMaps)
+            {
+                treasureMap.SetActive(false);
+            }
+
+            // Deactivate every object in the treasureTriggers array
+            foreach (GameObject treasureTrigger in treasureTriggers)
+            {
+                treasureTrigger.SetActive(false);
+            }
+
+            noTreasureMapText.SetActive(true);
+
             isInShovelTrigger = false;
         }
-
-        // Deactivate every object in the treasureMaps array
-        foreach (GameObject treasureMap in treasureMaps)
-        {
-            treasureMap.SetActive(false);
-        }
-
-        // Deactivate every object in the treasureTriggers array
-        foreach (GameObject treasureTrigger in treasureTriggers)
-        {
-            treasureTrigger.SetActive(false);
-        }
-
-        noTreasureMapText.SetActive(true);
 
         SpawnSmoke(); // Always spawn smoke
     }

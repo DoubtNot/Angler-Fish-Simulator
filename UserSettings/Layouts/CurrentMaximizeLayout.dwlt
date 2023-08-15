@@ -443,9 +443,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 1580.9749, y: 88.50247, z: -910.494}
+    m_Target: {x: 65.599976, y: 10.8, z: -1847.2}
     speed: 2
-    m_Value: {x: 1580.9749, y: 88.50247, z: -910.494}
+    m_Value: {x: 65.599976, y: 10.8, z: -1847.2}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -492,13 +492,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.071962476, y: 0.6417656, z: 0.007072448, w: -0.7659197}
+    m_Target: {x: 0.2390638, y: 0.110412575, z: -0.027335277, w: 0.9643426}
     speed: 2
-    m_Value: {x: 0.071962476, y: 0.6417656, z: 0.007072448, w: -0.7659197}
+    m_Value: {x: 0.23905827, y: 0.11041002, z: -0.027334645, w: 0.9643203}
   m_Size:
-    m_Target: 20.12844
+    m_Target: 10
     speed: 2
-    m_Value: 20.12844
+    m_Value: 10
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -2035,7 +2035,7 @@ MonoBehaviour:
     m_SaveData: []
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 32456
+  m_LastSelectedObjectID: 36004
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -2093,24 +2093,24 @@ MonoBehaviour:
     m_SaveData: []
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: c87e0000
-      m_LastClickedID: 32456
-      m_ExpandedIDs: dc04feff6af9fffffcfaffff
+      scrollPos: {x: 0, y: 239}
+      m_SelectedIDs: da860000
+      m_LastClickedID: 34522
+      m_ExpandedIDs: 3afaffffd27f000048840000ba860000368700002a8b0000228c0000a48c0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: TreasureShovelTrigger
+        m_OriginalName: TreasureShovelTrigger
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 34522
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 10}
       m_SearchString: 
@@ -2188,7 +2188,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Darth_Artisan/Desert_Pack/Meshes/Rocks
+    - Assets/PNG/TreasureMaps
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 0
@@ -2202,7 +2202,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 7e700000
     m_LastClickedID: 28798
-    m_ExpandedIDs: ffffffff00000000d4990000d6990000d8990000da990000dc990000de990000e0990000e4990000e6990000e8990000ea990000f0990000ea9a0000d4b60000fab70000fcb70000
+    m_ExpandedIDs: ffffffff000000007ca600007ea6000080a6000082a6000084a6000086a6000088a600008aa600008ca600008ea6000090a6000092a6000094a60000c2a80000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2227,10 +2227,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 728}
-    m_SelectedIDs: c87e0000
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: da860000
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000d4990000d6990000d8990000da990000dc990000de990000e0990000e4990000e6990000e8990000ea990000f0990000ea9a0000d4b60000fab70000fcb70000
+    m_ExpandedIDs: ffffffff000000007ca600007ea6000080a6000082a6000084a6000086a6000088a600008aa600008ca600008ea6000090a6000092a6000094a60000c2a80000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -2255,8 +2255,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: c87e0000
-    m_LastClickedInstanceID: 32456
+    m_SelectedInstanceIDs: da860000
+    m_LastClickedInstanceID: 34522
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 
     m_RenameOverlay:
@@ -2344,7 +2344,7 @@ MonoBehaviour:
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
   m_PreviewResizer:
-    m_CachedPref: 322
+    m_CachedPref: -322
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1

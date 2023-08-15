@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6264996049701820799}
   - component: {fileID: 6264996049701820798}
   m_Layer: 0
-  m_Name: TreasureHoverAnimController
+  m_Name: TreasureHoverAnimController (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -63,7 +63,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6264996049861816343}
   m_Layer: 0
-  m_Name: TreasureShovel
+  m_Name: TreasureFishBarrel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +78,7 @@ Transform:
   m_GameObject: {fileID: 6264996049861816340}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 6264996049701820799}
@@ -100,17 +100,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 434b97deb571ec043a032d0b217c0e43,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 434b97deb571ec043a032d0b217c0e43,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 434b97deb571ec043a032d0b217c0e43,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.9
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 434b97deb571ec043a032d0b217c0e43,
         type: 3}
@@ -170,23 +170,23 @@ PrefabInstance:
     - target: {fileID: -7507362319693144827, guid: 434b97deb571ec043a032d0b217c0e43,
         type: 3}
       propertyPath: m_Name
-      value: ShovelMesh
+      value: FishBarrelMesh
       objectReference: {fileID: 0}
     - target: {fileID: -5506240080469381625, guid: 434b97deb571ec043a032d0b217c0e43,
         type: 3}
       propertyPath: m_Mesh
       value: 
-      objectReference: {fileID: 4068373912626513877, guid: dc6255026fa3fb24dbf009197a85a02b,
+      objectReference: {fileID: -5076798556035486163, guid: 96bcea05024c4e544b9794a846abe349,
         type: 3}
     - target: {fileID: -111334075696789251, guid: 434b97deb571ec043a032d0b217c0e43,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: fd5db48296367544080c329a9ce89959, type: 2}
+      objectReference: {fileID: 2100000, guid: a186c92f408496d4e8bf67a519f28f65, type: 2}
     - target: {fileID: 919132149155446097, guid: 434b97deb571ec043a032d0b217c0e43,
         type: 3}
       propertyPath: m_Name
-      value: Shovel
+      value: FishBarrel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 434b97deb571ec043a032d0b217c0e43, type: 3}
