@@ -13,13 +13,17 @@ public class DigForTreasure : MonoBehaviour
     public GameObject[] treasureMaps; // Array of the "X marks the spot" drawings that appear in front of the treasure map object
     public GameObject[] treasureTriggers; // Array of the colliders that set off the bools below ("isIn...Trigger")
 
+    public GameObject[] anglerfishTreasures; // Array of anglerfish treasure prefabs
     public GameObject[] boatTreasures; // Array of boat treasure prefabs
     public GameObject[] fishBarrelTreasures; // Array of the fish barrel treasure prefabs
     public GameObject[] shovelTreasures; // Array of shovel treasure prefabs
+    public GameObject[] fishingPoleTreasures; // Array of Fishing Pole treasure prefabs
 
+    public bool isInAnglerfishTrigger = false;
     public bool isInBoatTrigger = false;
     public bool isInFishBarrelTrigger = false;
     public bool isInShovelTrigger = false;
+    public bool isInFishingPoleTrigger = false;
 
     public void Start()
     {
@@ -34,6 +38,11 @@ public class DigForTreasure : MonoBehaviour
 
     private void OnTriggerEnter(Collider collision)
     {
+        if (collision.gameObject.CompareTag("TreasureAnglerfish"))
+        {
+            isInAnglerfishTrigger = true;
+        }
+
         if (collision.gameObject.CompareTag("TreasureBoat"))
         {
             isInBoatTrigger = true;
@@ -48,10 +57,20 @@ public class DigForTreasure : MonoBehaviour
         {
             isInFishBarrelTrigger = true;
         }
+
+        if (collision.gameObject.CompareTag("TreasureFishingPole"))
+        {
+            isInFishingPoleTrigger = true;
+        }
     }
 
     private void OnTriggerExit(Collider collision)
     {
+        if (collision.gameObject.CompareTag("TreasureAnglerfish"))
+        {
+            isInAnglerfishTrigger = false;
+        }
+
         if (collision.gameObject.CompareTag("TreasureBoat"))
         {
             isInBoatTrigger = false;
@@ -66,10 +85,37 @@ public class DigForTreasure : MonoBehaviour
         {
             isInFishBarrelTrigger = false;
         }
+
+        if (collision.gameObject.CompareTag("TreasureFishingPole"))
+        {
+            isInFishingPoleTrigger = false;
+        }
     }
 
     public void DigForTreasureAction()
     {
+        if (isInAnglerfishTrigger)
+        {
+            int randomIndex = Random.Range(0, anglerfishTreasures.Length);
+            GameObject chosenAnglerfish = Instantiate(anglerfishTreasures[randomIndex], spawnSmokePoint.position, Quaternion.identity);
+
+            // Deactivate every object in the treasureMaps array
+            foreach (GameObject treasureMap in treasureMaps)
+            {
+                treasureMap.SetActive(false);
+            }
+
+            // Deactivate every object in the treasureTriggers array
+            foreach (GameObject treasureTrigger in treasureTriggers)
+            {
+                treasureTrigger.SetActive(false);
+            }
+
+            noTreasureMapText.SetActive(true);
+
+            isInAnglerfishTrigger = false;
+        }
+
         if (isInBoatTrigger)
         {
             int randomIndex = Random.Range(0, boatTreasures.Length);
@@ -114,6 +160,29 @@ public class DigForTreasure : MonoBehaviour
             isInFishBarrelTrigger = false;
         }
 
+
+        if (isInFishingPoleTrigger)
+        {
+            int randomIndex = Random.Range(0, fishingPoleTreasures.Length);
+            GameObject chosenFishingPole = Instantiate(fishingPoleTreasures[randomIndex], spawnSmokePoint.position, Quaternion.identity);
+
+            // Deactivate every object in the treasureMaps array
+            foreach (GameObject treasureMap in treasureMaps)
+            {
+                treasureMap.SetActive(false);
+            }
+
+            // Deactivate every object in the treasureTriggers array
+            foreach (GameObject treasureTrigger in treasureTriggers)
+            {
+                treasureTrigger.SetActive(false);
+            }
+
+            noTreasureMapText.SetActive(true);
+
+            isInFishingPoleTrigger = false;
+        }
+
         if (isInShovelTrigger)
         {
             int randomIndex = Random.Range(0, shovelTreasures.Length);
@@ -135,6 +204,7 @@ public class DigForTreasure : MonoBehaviour
 
             isInShovelTrigger = false;
         }
+
 
         SpawnSmoke(); // Always spawn smoke
     }

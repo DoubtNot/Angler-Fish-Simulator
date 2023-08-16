@@ -25,6 +25,8 @@ TagManager:
   - BowlingPin
   - TreasureShovel
   - TreasureFishBarrel
+  - TreasureFishingPole
+  - TreasureAnglerfish
   layers:
   - Default
   - TransparentFX
