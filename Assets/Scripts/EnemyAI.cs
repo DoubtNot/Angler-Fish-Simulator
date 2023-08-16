@@ -12,6 +12,8 @@ public class EnemyAI : MonoBehaviour
     public float chaseSpeed = 3f; // The speed at which the enemy chases the player.
     public float retreatSpeed = 2f; // The speed at which the enemy retreats from the player.
 
+    public float destroyEnemyAtRange = 10f; // Range at which the enemies will automatically be destroyed if player is not within.
+
     private GameObject player; // Reference to the player GameObject.
     private float nextFireTime; // Time to track the next firing.
 
@@ -61,6 +63,11 @@ public class EnemyAI : MonoBehaviour
                     FireProjectile();
                     nextFireTime = Time.time + fireRate;
                 }
+            }
+
+            if (distanceToPlayer > destroyEnemyAtRange)
+            {
+                Destroy(gameObject);
             }
         }
     }
