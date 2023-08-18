@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 9088013607442587257}
   - component: {fileID: -9203085983618389346}
   - component: {fileID: -2670820091894070913}
+  - component: {fileID: 5969401899813872252}
   m_Layer: 0
   m_Name: EnemyAmmoTenticles
   m_TagString: EnemyAmmo
@@ -131,6 +132,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyDelay: 10
+--- !u!114 &5969401899813872252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2004202672231006307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea01a762848fe54f85a8cef72583bf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smokeyBurst: {fileID: 950930809333698622, guid: 54cf83c7b04a6564a8334165b22d7c82,
+    type: 3}
 --- !u!1 &3343833044563613290
 GameObject:
   m_ObjectHideFlags: 0
@@ -140,10 +155,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3659040264724381831}
-  - component: {fileID: 9189692851268270081}
+  - component: {fileID: 4144950382838797027}
   m_Layer: 0
   m_Name: joint4
-  m_TagString: EnemyAmmo
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -164,7 +179,7 @@ Transform:
   m_Father: {fileID: 3328489099777112984}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &9189692851268270081
+--- !u!136 &4144950382838797027
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -174,10 +189,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 20.42
-  m_Height: 86.64
+  m_Radius: 22.42
+  m_Height: 339.16
   m_Direction: 0
-  m_Center: {x: 0, y: 0, z: -2.4}
+  m_Center: {x: 5.3, y: 0, z: -6.74}
 --- !u!1 &5049336532704243554
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,10 +202,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8398724643348226638}
-  - component: {fileID: 4111511337012351661}
   m_Layer: 0
   m_Name: joint6
-  m_TagString: EnemyAmmo
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -211,20 +225,6 @@ Transform:
   m_Father: {fileID: 8779747589490337787}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &4111511337012351661
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5049336532704243554}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 11.34
-  m_Height: 35.38
-  m_Direction: 0
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &5128834788848714174
 GameObject:
   m_ObjectHideFlags: 0
@@ -298,10 +298,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6004387174108415626}
-  - component: {fileID: 4835434526044296546}
   m_Layer: 0
   m_Name: joint2
-  m_TagString: EnemyAmmo
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -322,20 +321,6 @@ Transform:
   m_Father: {fileID: 1477805504046461460}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!136 &4835434526044296546
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7878474428460993051}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 26.9
-  m_Height: 100.17
-  m_Direction: 0
-  m_Center: {x: 0, y: 0, z: -2.53}
 --- !u!1 &8347140894470392602
 GameObject:
   m_ObjectHideFlags: 0

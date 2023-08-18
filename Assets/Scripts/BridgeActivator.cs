@@ -5,8 +5,9 @@ public class BridgeActivator : MonoBehaviour
 {
     public GameObject[] activateObjects; // Array to hold the bridge objects you want to activate.
     public Button[] uiButtons; // Array to hold the UI buttons you want to interact with.
+    public GameObject[] deactivateObjects; // Array to hold the GameObjects you want to deactivate upon trigger enter.
 
-    public GameObject[] deactivateObjects; // Array to hold the GameObjects you want to deactivate.
+    public GameObject[] onExitDeactivateObjects; //  Array to hold the GameObjects you want to deactivate upon trigger exit.
 
     private void Start()
     {
@@ -37,6 +38,18 @@ public class BridgeActivator : MonoBehaviour
             foreach (GameObject deactivateObjects in deactivateObjects)
             {
                 deactivateObjects.SetActive(false);
+            }
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            // Deactivate the string of gameobjects upon trigger exit.
+            foreach (GameObject onExitDeactivateObjects in onExitDeactivateObjects)
+            {
+                onExitDeactivateObjects.SetActive(false);
             }
         }
     }

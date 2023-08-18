@@ -25,7 +25,7 @@ public class HitCounter : MonoBehaviour
         hitsDecreaseTimer = hitsDecreaseInterval;
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider collision)
     {
         // Check if the collision involves the player (replace "EnemyAmmo" with the appropriate tag for the enemy ammo).
         if (collision.gameObject.CompareTag("EnemyAmmo"))
@@ -50,7 +50,7 @@ public class HitCounter : MonoBehaviour
                 // Reset the hit count to 1.
                 currentHits = 1;
                 uiImage.SetActive(false);
-                
+
                 //reset attached object's position to (15,5092,108) for OpenWorlds and (0,0,0) for Tutorial.
                 transform.position = resetLocation;
             }
