@@ -6,7 +6,7 @@ public class DestroyEnemyAmmoOnCollision : MonoBehaviour
 {
     public GameObject smokeyBurst;
 
-    private void OnTriggerEnter(Collider collision)
+    private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
