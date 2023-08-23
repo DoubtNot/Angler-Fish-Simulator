@@ -18,12 +18,14 @@ public class DigForTreasure : MonoBehaviour
     public GameObject[] fishBarrelTreasures; // Array of the fish barrel treasure prefabs
     public GameObject[] shovelTreasures; // Array of shovel treasure prefabs
     public GameObject[] fishingPoleTreasures; // Array of Fishing Pole treasure prefabs
+    public GameObject[] cannonTreasures; // Array of cannon treasure prefabs
 
     public bool isInAnglerfishTrigger = false;
     public bool isInBoatTrigger = false;
     public bool isInFishBarrelTrigger = false;
     public bool isInShovelTrigger = false;
     public bool isInFishingPoleTrigger = false;
+    public bool isInCannonTrigger = false;
 
     public void Start()
     {
@@ -62,6 +64,11 @@ public class DigForTreasure : MonoBehaviour
         {
             isInFishingPoleTrigger = true;
         }
+
+        if (collision.gameObject.CompareTag("TreasureCannon"))
+        {
+            isInCannonTrigger = true;
+        }
     }
 
     private void OnTriggerExit(Collider collision)
@@ -89,6 +96,11 @@ public class DigForTreasure : MonoBehaviour
         if (collision.gameObject.CompareTag("TreasureFishingPole"))
         {
             isInFishingPoleTrigger = false;
+        }
+
+        if (collision.gameObject.CompareTag("TreasureCannon"))
+        {
+            isInCannonTrigger = false;
         }
     }
 
@@ -203,6 +215,28 @@ public class DigForTreasure : MonoBehaviour
             noTreasureMapText.SetActive(true);
 
             isInShovelTrigger = false;
+        }
+
+        if (isInCannonTrigger)
+        {
+            int randomIndex = Random.Range(0, cannonTreasures.Length);
+            GameObject chosenCannon = Instantiate(cannonTreasures[randomIndex], spawnSmokePoint.position, Quaternion.identity);
+
+            // Deactivate every object in the treasureMaps array
+            foreach (GameObject treasureMap in treasureMaps)
+            {
+                treasureMap.SetActive(false);
+            }
+
+            // Deactivate every object in the treasureTriggers array
+            foreach (GameObject treasureTrigger in treasureTriggers)
+            {
+                treasureTrigger.SetActive(false);
+            }
+
+            noTreasureMapText.SetActive(true);
+
+            isInCannonTrigger = false;
         }
 
 

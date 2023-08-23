@@ -27,6 +27,7 @@ TagManager:
   - TreasureFishBarrel
   - TreasureFishingPole
   - TreasureAnglerfish
+  - TreasureCannon
   layers:
   - Default
   - TransparentFX
